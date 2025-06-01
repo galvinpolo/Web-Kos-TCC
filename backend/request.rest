@@ -1,0 +1,28 @@
+GET http://localhost:5000/kamar
+
+###
+
+POST http://localhost:5000/add-kamar
+Content-Type: application/json
+
+{
+  "nomor_kamar": "Kamar 3",
+  "tipe_kamar": "Kamar Mandi Dalam",
+  "harga_kamar": 500000,
+  "status_kamar": "Tersedia"
+}
+
+###
+
+PUT http://localhost:5000/update-kamar/2
+Content-Type: application/json
+
+{
+  "nomor_kamar": "Kamar 69",
+  "tipe_kamar": "Kamar Mandi Luar",
+  "harga_kamar": 300000,
+  "status_kamar": "Tersedia"
+}
+
+###
+DELETE http://localhost:5000/delete-kamar/1
