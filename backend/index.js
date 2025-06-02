@@ -21,7 +21,7 @@ const PORT = process.env.PORT;
 // Middleware untuk mengizinkan CORS
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://web-kos-dot-b-01-450713.uc.r.appspot.com",
     credentials: true,
   })
 );
