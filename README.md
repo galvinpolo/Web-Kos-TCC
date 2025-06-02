@@ -1,4 +1,4 @@
-# Web Sewa Kos - API Documentation
+# Web Sewa Kos - Dokumentasi API
 
 ## User API
 
