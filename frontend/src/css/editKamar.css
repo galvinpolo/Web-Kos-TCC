@@ -1,0 +1,94 @@
+.editkamar-container {
+    max-width: 480px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffffdd;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+  
+  .editkamar-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #3a7bd5;
+  }
+  
+  .editkamar-msg {
+    background: #e3fcec;
+    color: #2e7d32;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .editkamar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .editkamar-form label {
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .editkamar-form input[type="text"],
+  .editkamar-form input[type="number"],
+  .editkamar-form input[type="file"] {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  .editkamar-form input:focus {
+    border-color: #3a7bd5;
+  }
+  
+  .editkamar-preview {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f0f0f0;
+    margin-top: 0.5rem;
+  }
+  
+  .editkamar-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+  }
+  
+  .editkamar-btn {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .editkamar-btn.simpan {
+    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    color: #fff;
+  }
+  
+  .editkamar-btn.simpan:hover {
+    background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  }
+  
+  .editkamar-btn.hapus {
+    background: #e53935;
+    color: #fff;
+  }
+  
+  .editkamar-btn.hapus:hover {
+    background: #c62828;
+  }
+  

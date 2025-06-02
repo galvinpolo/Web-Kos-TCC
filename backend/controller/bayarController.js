@@ -6,7 +6,7 @@ const uploadFolder = path.resolve("../frontend/assets/uploads_bukti");
 
 export const getBayar = async (req, res) => {
   try {
-    const baseUrl = `${req.protocol}://${req.get("host")}/uploads`;
+    const baseUrl = `${req.protocol}://${req.get("host")}/uploads_bukti`;
     const bayarList = await Bayar.findAll();
     const data = bayarList.map((l) => ({
       ...l.toJSON(),
@@ -44,7 +44,7 @@ export const createBayar = async (req, res) => {
 
 export const getBayarById = async (req, res) => {
   try {
-    const baseUrl = `${req.protocol}://${req.get("host")}/uploads`;
+    const baseUrl = `${req.protocol}://${req.get("host")}/uploads_bukti`;
     const bayar = await Bayar.findOne({ where: { id_bayar: req.params.id } });
     if (!bayar)
       return res.status(404).json({ message: "Pembayaran tidak ditemukan" });

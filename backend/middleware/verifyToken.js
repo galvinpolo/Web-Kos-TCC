@@ -16,3 +16,10 @@ export const verifyToken = (req, res, next) => {
     next();
   });
 };
+
+export const verifyAdmin = (req, res, next) => {
+  if (req.role !== "admin") {
+    return res.status(403).json({ message: "Akses hanya untuk admin." });
+  }
+  next();
+};

@@ -109,6 +109,7 @@ export const loginHandler = async (req, res) => {
     return res.status(200).json({
       status: "Success",
       message: "Login berhasil",
+      role: user.role,
       safeUserData,
       accessToken,
     });

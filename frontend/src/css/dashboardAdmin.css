@@ -1,0 +1,107 @@
+.dashboard-admin {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.dashboard-navbar {
+  display: flex;
+  gap: 2rem;
+  background: #3f51b5;
+  padding: 1.2rem 2rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(60, 60, 100, 0.07);
+}
+
+.dashboard-navbar span {
+  cursor: pointer;
+  padding-bottom: 0.3rem;
+  border-bottom: 2.5px solid transparent;
+  transition: border 0.2s;
+}
+
+.dashboard-navbar .active {
+  border-bottom: 2.5px solid #fff;
+}
+
+.dashboard-content {
+  padding: 2.5rem 3vw;
+}
+
+.dashboard-content h2 {
+  color: #3f51b5;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.dashboard-loading,
+.dashboard-empty {
+  color: #888;
+  text-align: center;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+}
+
+.dashboard-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+}
+
+.dashboard-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(60, 60, 100, 0.1);
+  width: 220px;
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(60, 60, 100, 0.13);
+}
+
+.dashboard-card-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #e3e7ef;
+}
+
+.dashboard-card-title {
+  font-weight: bold;
+  font-size: 1.13rem;
+  color: #3f51b5;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.dashboard-card-type {
+  color: #666;
+  font-size: 0.97rem;
+  text-align: center;
+}
+
+.dashboard-logout-btn {
+  background: #e53935;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dashboard-logout-btn:hover {
+  background: #b71c1c;
+}
